@@ -1,5 +1,7 @@
 # Adam G's github repositories:
 
+[Link to my repositories](https://github.com/adamdoescode)
+
 ## About me
 An iterant biologist and science communicator (mostly for school aged students). I am aspiring to do things that help improve lives through real science and hopefully some data analysis.
 
