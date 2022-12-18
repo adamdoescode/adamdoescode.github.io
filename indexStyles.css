@@ -50,3 +50,7 @@ body {
 }
 
 /* footer */
+.pageFooter {
+    display: flex;
+    background-color: lightyellow;
+}
