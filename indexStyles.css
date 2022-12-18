@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(181, 232, 215);
+}
+
+/* headers */
+
+.pageHeader {
+    display: flex;
+    background-color: lightblue;
+}
+.headerSpacer {
+    flex: 1;
+}
+.headerSpacer {
+    flex: 2;
+}
+
+/* aboutme */
+
+.aboutMe {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* projectlinks */
+
+.ProjectsSection {
+    display: flex;
+    flex-direction: column;
+}
+.ProjectsSectionTitle {
+    text-align: center;
+}
+
+.projectLinksGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(184, 230, 184);
+    /* width: 400px; */
+}
+.aProject {
+    /* flex: 1; */
+    margin: 1em;
+    width: 300px;
+    height: 100px;
+    background-color: beige;
+}
+
+/* footer */
