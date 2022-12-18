@@ -1,3 +1,5 @@
+/* background colours */
+
 body {
     background-color: rgb(181, 232, 215);
 }
@@ -37,20 +39,43 @@ body {
 .projectLinksGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     background-color: rgb(184, 230, 184);
+    justify-content: center;
+    /* flex-direction: column; */
     /* width: 400px; */
 }
+
 .aProject {
     /* flex: 1; */
+    display: flex;
+    vertical-align: centre;
+    justify-content: center;
     margin: 1em;
     width: 300px;
     height: 100px;
+    text-align: center;
+}
+.projectEven {
     background-color: beige;
 }
+.projectOdd {
+    background-color: rgb(220, 245, 245);
+}
+.projectLink {
+    flex: 1;
+    border: solid white 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* footer */
 .pageFooter {
     display: flex;
     background-color: lightyellow;
+    /* align-items: center; */
+}
+.paraFooter {
+    text-align: center;
 }
