@@ -107,9 +107,10 @@ body {
 /* footer */
 .pageFooter {
     display: flex;
-    background-color: lightyellow;
+    background-color: rgb(244, 155, 155);
     /* align-items: center; */
 }
 .paraFooter {
+    flex: 1;
     text-align: center;
 }
