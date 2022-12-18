@@ -8,7 +8,7 @@ body {
 
 .pageHeader {
     display: flex;
-    background-color: lightblue;
+    background-color: rgb(191, 239, 121);
 }
 .headerSpacer {
     flex: 1;
@@ -64,6 +64,7 @@ body {
 .ProjectsSection {
     display: flex;
     flex-direction: column;
+    background-color: rgb(124, 124, 224);
 }
 .ProjectsSectionTitle {
     text-align: center;
