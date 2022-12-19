@@ -1,14 +1,32 @@
 /* background colours */
-
-body {
+html, body {
     background-color: rgb(181, 232, 215);
+    height: 100%;
+}
+
+/* website layout */
+
+.parentDiv {
+    /* holds all divs inside it */
+    display: flex;
+    flex-direction: row;
+}
+.spacer {
+    flex: 1;
+    /* flex-basis: 1000em; */
+    flex-shrink: 1;
+}
+.mainTextContainer {
+    flex: 3;
+    flex-basis: 50em;
+    flex-shrink: 0;
 }
 
 /* headers */
 
 .pageHeader {
     display: flex;
-    background-color: rgb(191, 239, 121);
+    /* background-color: rgb(191, 239, 121); */
 }
 .headerSpacer {
     flex: 1;
@@ -23,9 +41,19 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: lightgoldenrodyellow;
+    border: solid rgb(220, 220, 146) 1em;
 }
+
 .aboutImage {
-    flex: 1;
+    display: flex;
+    flex: 5;
+    flex-basis: 100%;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid rgb(220, 220, 146) 1em; */
+    padding: 5px;
 }
 .profilePic {
     height: 300px;
@@ -35,12 +63,14 @@ body {
 /* aboutmetext */
 
 .aboutMe {
-    flex: 2;
+    flex: 5;
+    flex-basis: 100%;
     display: flex;
     background-color: lightgoldenrodyellow;
     flex-direction: column;
     align-items: center;
-    border: solid rgb(220, 220, 146) 1em;
+    /* border: solid rgb(220, 220, 146) 1em; */
+    padding: 5px;
 }
 
 .aboutMe p {
@@ -64,7 +94,7 @@ body {
 .ProjectsSection {
     display: flex;
     flex-direction: column;
-    background-color: rgb(124, 124, 224);
+    background-color: rgb(184, 230, 184);
 }
 .ProjectsSectionTitle {
     text-align: center;
@@ -102,7 +132,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 /* footer */
 .pageFooter {
