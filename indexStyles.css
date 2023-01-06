@@ -107,6 +107,7 @@ html, body {
     justify-content: center;
     /* flex-direction: column; */
     /* width: 400px; */
+    gap: 10px;
 }
 
 .aProject {
