@@ -16,6 +16,7 @@ html, body {
 
 a {
     color: rgb(214, 170, 224);
+    text-decoration:none;
 }
 
 /* website layout */
@@ -148,6 +149,9 @@ h1 span {
 .ProjectsSection {
     display: flex;
     flex-direction: column;
+    padding: 5px;
+    border-spacing: 5px;
+    padding-bottom: 20px;
     /* background-color: rgb(184, 230, 184); */
 }
 .ProjectsSectionTitle {
@@ -156,22 +160,28 @@ h1 span {
 
 .projectLinksGrid {
     display: flex;
-    flex-wrap: wrap;
-    /* background-color: rgb(184, 230, 184); */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    /* width: 400px; */
-    gap: 10px;
+    gap: 5px;
 }
 
+.projectDecorativeElement, .aProject {
+    width: 600px;
+}
+
+.projectDecorativeElement {
+    height: 5px;
+    border-spacing: 5px;
+    background-color: rgb(156, 121, 121);
+}
 .aProject {
     /* flex: 1; */
     display: flex;
     vertical-align: centre;
     justify-content: center;
-    margin: 1em;
-    width: 300px;
-    height: 100px;
+    margin: 0.5em;
+    height: 70px;
     text-align: center;
 }
 .projectEven {
@@ -182,10 +192,12 @@ h1 span {
 }
 .projectLink {
     flex: 1;
-    border: solid rgb(161, 222, 167) 2px;
+    border: solid rgb(100, 134, 103) 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: larger;
+    color: rgb(234, 183, 208);
 }
 
 /* footer */
