@@ -8,6 +8,10 @@ html, body {
     background-color: rgb(13, 48, 37);
     height: 100%;
     color: antiquewhite;
+    margin: 0%;
+    /* padding: 0%;
+    border-spacing: 0%;
+    border: 0%; */
 }
 
 a {
@@ -38,6 +42,8 @@ a {
     display: flex;
     /* background-color: rgb(191, 239, 121); */
     display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 .Title {
     display: flex;
@@ -84,7 +90,7 @@ h1 span {
     /* background-color: lightgoldenrodyellow; */
     /* border: solid rgb(220, 220, 146) 5px; */
 }
-.aboutDecorativeElement {
+.DecorativeElement {
     height: 5px;
     width: 100%;
     border-spacing: 5px;
