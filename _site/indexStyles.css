@@ -74,12 +74,28 @@ h1 span {
 /* aboutme section */
 
 .aboutSection {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     height: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* background-color: lightgoldenrodyellow; */
     /* border: solid rgb(220, 220, 146) 5px; */
+}
+.aboutDecorativeElement {
+    height: 5px;
+    width: 100%;
+    border-spacing: 5px;
+    background-color: rgb(147, 22, 118);
+}
+
+.aboutSectionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
 }
 
 .aboutImage {
@@ -89,7 +105,7 @@ h1 span {
     /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
-    border: solid rgb(220, 220, 146) 2px;
+    /* border: solid rgb(220, 220, 146) 2px; */
     padding: 0px;
     height: 100%;
 }
@@ -111,7 +127,7 @@ h1 span {
     /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
-    border: solid rgb(220, 220, 146) 2px;
+    /* border: solid rgb(220, 220, 146) 2px; */
     padding: 5px;
     height: 100%;
 }
