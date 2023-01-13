@@ -79,29 +79,18 @@ h1 span {
 
 /* aboutme section */
 
+
 .aboutSection {
-    flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: max-content;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* background-color: lightgoldenrodyellow; */
-    /* border: solid rgb(220, 220, 146) 5px; */
 }
 .DecorativeElement {
     height: 5px;
     width: 100%;
     border-spacing: 5px;
     background-color: rgb(147, 22, 118);
-}
-
-.aboutSectionContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: max-content;
 }
 
 .aboutImage {
