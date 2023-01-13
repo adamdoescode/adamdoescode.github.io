@@ -1,3 +1,8 @@
+/* debug */
+/* * {
+    border: 1px solid red;
+} */
+
 /* background colours */
 html, body {
     background-color: rgb(13, 48, 37);
@@ -71,37 +76,44 @@ h1 span {
 .aboutSection {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    height: max-content;
     /* background-color: lightgoldenrodyellow; */
     /* border: solid rgb(220, 220, 146) 5px; */
 }
 
 .aboutImage {
     display: flex;
-    flex: 5;
+    flex: auto;
     flex-basis: 100%;
     /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
     border: solid rgb(220, 220, 146) 2px;
     padding: 0px;
+    height: 100%;
 }
 .profilePic {
     height: 300px;
     /* width: 300px; */
 }
+.imageText {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /* aboutmetext */
 
 .aboutMe {
-    flex: 5;
+    flex: auto;
     flex-basis: 100%;
     display: flex;
     /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
-    /* border: solid rgb(220, 220, 146) 1em; */
+    border: solid rgb(220, 220, 146) 2px;
     padding: 5px;
+    height: 100%;
 }
 
 .aboutMe p {
