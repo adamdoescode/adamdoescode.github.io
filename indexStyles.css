@@ -125,6 +125,7 @@ h1 span {
     align-items: center;
     /* border: solid rgb(220, 220, 146) 2px; */
     padding: 5px;
+    padding-left: 10px;
     height: 100%;
 }
 
@@ -167,7 +168,7 @@ h1 span {
 }
 
 .projectDecorativeElement, .aProject {
-    width: 600px;
+    width: 60%;
 }
 
 .projectDecorativeElement {
