@@ -169,7 +169,7 @@ h1 span {
 }
 
 .projectDecorativeElement, .aProject {
-    width: 60%;
+    width: 80%;
 }
 
 .projectDecorativeElement {
@@ -196,10 +196,21 @@ h1 span {
     flex: 1;
     border: solid rgb(100, 134, 103) 2px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: larger;
     color: rgb(234, 183, 208);
+}
+.projectLinkImg {
+    box-sizing: content-box;
+    flex: auto;
+    width: 5%;
+    height: auto;
+}
+.projectLinkText {
+    flex: 3;
+    text-align: center;
 }
 
 /* footer */
