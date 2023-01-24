@@ -186,12 +186,6 @@ h1 span {
     height: 70px;
     text-align: center;
 }
-.projectEven {
-    /* background-color: rgb(227, 173, 235); */
-}
-.projectOdd {
-    /* background-color: rgb(220, 245, 245); */
-}
 .projectLink {
     flex: 1;
     border: solid rgb(100, 134, 103) 2px;
