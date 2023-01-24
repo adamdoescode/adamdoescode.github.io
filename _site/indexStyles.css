@@ -183,8 +183,14 @@ h1 span {
     vertical-align: centre;
     justify-content: center;
     margin: 0.5em;
-    height: 70px;
+    height: 90px;
     text-align: center;
+}
+/* this div class is for the badges */
+.badgeHolderForProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 .projectLink {
     flex: 1;
@@ -196,8 +202,12 @@ h1 span {
     font-size: larger;
     color: rgb(234, 183, 208);
 }
+/* this is for the shields/badges */
 .projectLinkImg {
     box-sizing: border-box;
+    /* attempts to fix height/width result in warped badges 😭 */
+    /* height: 10%;
+    width: auto; */
 }
 .projectLinkText {
     flex: 3;
