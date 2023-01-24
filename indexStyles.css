@@ -203,10 +203,7 @@ h1 span {
     color: rgb(234, 183, 208);
 }
 .projectLinkImg {
-    box-sizing: content-box;
-    flex: auto;
-    width: 5%;
-    height: auto;
+    box-sizing: border-box;
 }
 .projectLinkText {
     flex: 3;
