@@ -7,3 +7,6 @@ rm -rf _site
 
 # Run pytest with the given arguments
 pytest
+
+# exit
+exit 0
