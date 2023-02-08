@@ -9,10 +9,12 @@ html, body {
     height: 100%;
     color: antiquewhite;
     margin: 0%;
-    /* padding: 0%;
-    border-spacing: 0%;
-    border: 0%; */
 }
+/* @media (max-width: 1000px) {
+    html, body {
+        font-size: 16pt;
+    }
+} */
 
 a {
     color: rgb(214, 170, 224);
@@ -80,13 +82,24 @@ h1 span {
 
 /* aboutme section */
 
-
-.aboutSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: max-content;
+@media (max-width: 1000px) {
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
 }
+@media (min-width: 1000px) {
+    .aboutSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: max-content;
+    }
+}
+
+
 .DecorativeElement {
     height: 5px;
     width: 100%;
@@ -200,7 +213,7 @@ h1 span {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: larger;
+    /* font-size: larger; */
     color: rgb(234, 183, 208);
 }
 /* this is for the shields/badges */
