@@ -7,7 +7,7 @@
 html, body {
     background-color: rgb(13, 48, 37);
     height: 100%;
-    color: antiquewhite;
+    color: #d4f1f4;
     margin: 0%;
 }
 @media (max-width: 900px) {
@@ -25,9 +25,9 @@ html, body {
         max-width: 80%;
     }
     h1 span {
-        color: rgb(228, 175, 158);
+        color: #75e6da;
         font-size: 40px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0,0,0,0.5);
         max-width: 60%;
     }
 }
@@ -43,15 +43,15 @@ html, body {
         width: 100%;
     }
     h1 span {
-        color: rgb(228, 175, 158);
+        color: #75e6da;
         font-size: 40px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0,0,0,0.5);
         max-width: 60%;
     }
 }
 
 a {
-    color: rgb(214, 170, 224);
+    color: #75e6da;
     text-decoration:none;
 }
 
@@ -78,7 +78,6 @@ a {
 
 .pageHeader {
     display: flex;
-    /* background-color: rgb(191, 239, 121); */
     display: inline-block;
     padding-top: 0px;
     padding-bottom: 10px;
@@ -124,18 +123,16 @@ a {
     height: 5px;
     max-width: 100%;
     border-spacing: 5px;
-    background-color: rgb(147, 22, 118);
+    background-color: #75e6da;
 }
 
 .aboutImage {
     display: flex;
     flex: auto;
     flex-basis: 100%;
-    /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: solid rgb(220, 220, 146) 2px; */
     padding: 0px;
     height: 100%;
 }
@@ -154,11 +151,9 @@ a {
     flex: auto;
     flex-basis: 100%;
     display: flex;
-    /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    /* border: solid rgb(220, 220, 146) 2px; */
     padding: 5px;
     padding-left: 10px;
     height: 100%;
@@ -191,7 +186,6 @@ a {
     border-spacing: 5px;
     padding-bottom: 20px;
     max-width: 100%;
-    /* background-color: rgb(184, 230, 184); */
 }
 .ProjectsSectionTitle {
     text-align: center;
@@ -212,7 +206,7 @@ a {
 .projectDecorativeElement {
     height: 5px;
     border-spacing: 5px;
-    background-color: rgb(156, 121, 121);
+    background-color: #75e6da;
     max-width: 80%;
 }
 .aProject {
@@ -238,8 +232,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* font-size: larger; */
-    color: rgb(234, 183, 208);
+    color: #75e6da;
     max-width: 80%;
 }
 /* this is for the shields/badges */
@@ -255,8 +248,6 @@ a {
 .pageFooter {
     display: flex;
     max-width: 100%;
-    /* background-color: rgb(244, 155, 155); */
-    /* align-items: center; */
 }
 .paraFooter {
     flex: 1;
