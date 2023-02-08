@@ -10,11 +10,45 @@ html, body {
     color: antiquewhite;
     margin: 0%;
 }
-/* @media (max-width: 1000px) {
+@media (max-width: 900px) {
     html, body {
         font-size: 16pt;
     }
-} */
+    .spacer {
+        width: 0px;
+    }
+    h1 {
+        /* flex: 1; */
+        position: absolute;
+        top: 10px;
+        left: 10%;
+        max-width: 80%;
+    }
+    h1 span {
+        color: rgb(228, 175, 158);
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        max-width: 60%;
+    }
+}
+@media (min-width: 900px) {
+    html, body {
+        font-size: 12pt;
+    }
+    h1 {
+        /* flex: 1; */
+        position: absolute;
+        top: 100px;
+        left: 0%;
+        width: 100%;
+    }
+    h1 span {
+        color: rgb(228, 175, 158);
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        max-width: 60%;
+    }
+}
 
 a {
     color: rgb(214, 170, 224);
@@ -27,16 +61,17 @@ a {
     /* holds all divs inside it */
     display: flex;
     flex-direction: row;
+    justify-items: center;
+    max-width: 100%;
 }
 .spacer {
     flex: 1;
-    /* flex-basis: 1000em; */
     flex-shrink: 1;
 }
 .mainTextContainer {
     flex: 3;
     flex-basis: 50em;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 /* headers */
@@ -54,43 +89,28 @@ a {
     text-align: center;
     align-items: center;
 }
-h1 {
-    /* flex: 1; */
-    position: absolute;
-    top: 100px;
-    left: 0%;
-    width: 100%;
-}
-
-h1 span {
-    color: rgb(228, 175, 158);
-    font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 .titleImg {
     /* flex: auto; */
-    height: 100%;
+    max-height: 100%;
     max-width: 100%;
 }
 .headerSpacer {
     flex: 1;
 }
-.headerSpacer {
-    flex: 2;
-}
 
 /* aboutme section */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .aboutSection {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: max-content;
+        margin: 5px;
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .aboutSection {
         display: flex;
         flex-direction: row;
@@ -102,7 +122,7 @@ h1 span {
 
 .DecorativeElement {
     height: 5px;
-    width: 100%;
+    max-width: 100%;
     border-spacing: 5px;
     background-color: rgb(147, 22, 118);
 }
@@ -120,7 +140,7 @@ h1 span {
     height: 100%;
 }
 .profilePic {
-    width: 500px;
+    max-width: 200px;
 }
 .imageText {
     width: 500px;
@@ -137,14 +157,17 @@ h1 span {
     /* background-color: lightgoldenrodyellow; */
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     /* border: solid rgb(220, 220, 146) 2px; */
     padding: 5px;
     padding-left: 10px;
     height: 100%;
+    max-width: 100%;
 }
 
 .aboutMe p {
     text-align: left;
+    max-width: 100%;
 }
 
 .aboutMeLinksContainer {
@@ -167,6 +190,7 @@ h1 span {
     padding: 5px;
     border-spacing: 5px;
     padding-bottom: 20px;
+    max-width: 100%;
     /* background-color: rgb(184, 230, 184); */
 }
 .ProjectsSectionTitle {
@@ -182,13 +206,14 @@ h1 span {
 }
 
 .projectDecorativeElement, .aProject {
-    width: 80%;
+    width: 100%;
 }
 
 .projectDecorativeElement {
     height: 5px;
     border-spacing: 5px;
     background-color: rgb(156, 121, 121);
+    max-width: 80%;
 }
 .aProject {
     /* flex: 1; */
@@ -215,13 +240,11 @@ h1 span {
     justify-content: center;
     /* font-size: larger; */
     color: rgb(234, 183, 208);
+    max-width: 80%;
 }
 /* this is for the shields/badges */
 .projectLinkImg {
     box-sizing: border-box;
-    /* attempts to fix height/width result in warped badges 😭 */
-    /* height: 10%;
-    width: auto; */
 }
 .projectLinkText {
     flex: 3;
@@ -231,6 +254,7 @@ h1 span {
 /* footer */
 .pageFooter {
     display: flex;
+    max-width: 100%;
     /* background-color: rgb(244, 155, 155); */
     /* align-items: center; */
 }
