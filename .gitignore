@@ -1,1 +1,4 @@
 _site/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
