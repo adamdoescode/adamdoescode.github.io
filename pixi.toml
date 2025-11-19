@@ -1,0 +1,12 @@
+[workspace]
+authors = ["AdamG <grey.ham101@gmail.com>"]
+channels = ["conda-forge"]
+name = "adamdoescode.github.io"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.13.*"
+act = ">=0.2.82,<0.3"
