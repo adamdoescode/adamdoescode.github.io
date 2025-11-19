@@ -1,0 +1,8 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.0
+    command: jekyll serve --watch --host 0.0.0.0 --port 4000 --force_polling
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
