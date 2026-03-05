@@ -11,3 +11,12 @@ This page uses essentially straight HTML + css. And was used as a way to learn f
 It still relies on Jekyll when on github's servers. Indeed, to get a reproducible local build I have setup a `docker_compose.yml` which can run this for local checks.
 
 I also have a pixi install to try and handle the python(?!) and `act` (local gh actions) dependencies.
+
+## Getting started
+
+From the root dir run:
+```bash
+docker compose up jekyll
+```
+
+This should download and run the jekyll docker image and you can then live edit the site.
