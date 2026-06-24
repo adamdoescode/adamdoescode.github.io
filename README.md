@@ -19,4 +19,6 @@ From the root dir run:
 docker compose up jekyll
 ```
 
+[Localhost page link defaults to here](http://127.0.0.1:4000/).
+
 This should download and run the jekyll docker image and you can then live edit the site.

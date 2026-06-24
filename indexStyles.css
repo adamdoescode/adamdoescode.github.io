@@ -224,6 +224,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    align-items: flex-start;
 }
 .projectLink {
     flex: 1;
@@ -238,6 +239,9 @@ a {
 /* this is for the shields/badges */
 .projectLinkImg {
     box-sizing: border-box;
+    height: 20px;
+    width: auto;
+    object-fit: contain;
 }
 .projectLinkText {
     flex: 3;
