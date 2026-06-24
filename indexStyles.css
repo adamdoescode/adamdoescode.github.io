@@ -220,21 +220,21 @@ a {
 }
 /* this div class is for the badges */
 .badgeHolderForProjects {
-    flex: 0.2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2px;
-    align-items: flex-start;
+    justify-content: center;
 }
 .projectLink {
     flex: 1;
     border: solid rgb(100, 134, 103) 2px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #75e6da;
     max-width: 80%;
+    gap: 2px;
 }
 /* this is for the shields/badges */
 .projectLinkImg {
@@ -244,7 +244,6 @@ a {
     object-fit: contain;
 }
 .projectLinkText {
-    flex: 3;
     text-align: center;
 }
 
