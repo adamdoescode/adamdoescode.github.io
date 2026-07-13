@@ -1,0 +1,16 @@
+title: Adamdoescode Landing Page
+description: A small website for my various coding and internet projects
+url: "https://adamdoescode.github.io"
+repository: adamdoescode/adamdoescode.github.io
+
+exclude:
+  - .actrc
+  - .bundle
+  - .github
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - debugging_styling_notes.md
+  - vendor
