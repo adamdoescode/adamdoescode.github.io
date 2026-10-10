@@ -1,20 +1,13 @@
-:root {
-  color-scheme: dark;
-  --background: #05445e;
-  --surface: #073b4c;
-  --text: #d4f1f4;
-  --accent: #75e6da;
-  --border: #648667;
-  --muted: #a9d6dc;
-}
+/* Blog styles.
+ * Colours come exclusively from assets/theme.css — do not hardcode hex here. */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  background: var(--background);
-  color: var(--text);
+  background: var(--colour-bg);
+  color: var(--colour-ink);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
   line-height: 1.65;
@@ -25,7 +18,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--colour-primary-ink);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
@@ -43,7 +36,7 @@ main,
 }
 
 .site-header {
-  border-bottom: 5px solid var(--accent);
+  border-bottom: var(--border-width) solid var(--colour-border);
   padding-block: 1.25rem;
 }
 
@@ -55,7 +48,7 @@ main,
 }
 
 .site-title {
-  color: var(--text);
+  color: var(--colour-ink);
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
@@ -73,7 +66,7 @@ main {
 h1,
 h2,
 h3 {
-  color: var(--accent);
+  color: var(--colour-ink);
   line-height: 1.2;
 }
 
@@ -82,12 +75,19 @@ h1 {
   margin-block: 0 1rem;
 }
 
+/* Pink underline instead of pink type: keeps headings at full contrast
+ * while still reading as the primary colour. */
+h1 {
+  border-bottom: var(--shadow-offset) solid var(--colour-primary);
+  padding-block-end: 0.3rem;
+}
+
 h2 {
   margin-block-start: 2.5rem;
 }
 
 time {
-  color: var(--muted);
+  color: var(--colour-muted);
   font-size: 0.9rem;
 }
 
@@ -98,12 +98,27 @@ time {
 }
 
 .post-list li {
-  border-top: 2px solid var(--border);
-  padding-block: 1.5rem;
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
+  background: var(--colour-surface);
+  margin-block-end: 1.5rem;
+  padding: 1.25rem;
 }
 
 .post-list h2 {
   margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+}
+
+.post-list h2 a {
+  color: var(--colour-ink);
+  text-decoration: none;
+}
+
+.post-list h2 a:hover,
+.post-list h2 a:focus-visible {
+  color: var(--colour-primary-ink);
+  text-decoration: underline;
 }
 
 .post-content {
@@ -114,27 +129,44 @@ time {
   display: block;
   height: auto;
   max-width: 100%;
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
+}
+
+.post-content blockquote {
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard-small);
+  margin-inline: 0;
+  padding: 0.75rem 1rem;
 }
 
 .post-content pre {
-  background: var(--surface);
-  border-left: 5px solid var(--accent);
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
   overflow-x: auto;
   padding: 1rem;
 }
 
 .post-content code {
-  background: var(--surface);
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: 1px solid var(--colour-border);
   padding: 0.1em 0.3em;
 }
 
 .post-content pre code {
   padding: 0;
+  border: 0;
+  box-shadow: none;
 }
 
 .post-navigation,
 .site-footer {
-  border-top: 2px solid var(--border);
+  border-top: var(--border-width) solid var(--colour-border);
   padding-block: 1.5rem;
 }
 

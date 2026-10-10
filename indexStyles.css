@@ -1,3 +1,6 @@
+/* Landing page styles.
+ * Colours come exclusively from assets/theme.css — do not hardcode hex here. */
+
 /* debug */
 /* * {
     border: 1px solid red;
@@ -5,9 +8,9 @@
 
 /* background colours */
 html, body {
-    background-color: #05445e;
+    background-color: var(--colour-bg);
     height: 100%;
-    color: #d4f1f4;
+    color: var(--colour-ink);
     margin: 0%;
 }
 @media (max-width: 900px) {
@@ -25,9 +28,7 @@ html, body {
         max-width: 80%;
     }
     h1 span {
-        color: #75e6da;
         font-size: 40px;
-        background-color: rgba(0,0,0,0.5);
         max-width: 60%;
     }
 }
@@ -43,16 +44,32 @@ html, body {
         width: 100%;
     }
     h1 span {
-        color: #75e6da;
         font-size: 40px;
-        background-color: rgba(0,0,0,0.5);
         max-width: 60%;
     }
 }
 
+/* The title sits on top of the header image, so it needs an opaque block
+ * behind it rather than a translucent one. */
+h1 span {
+    display: inline-block;
+    background-color: var(--colour-primary);
+    color: var(--colour-on-primary);
+    border: var(--border-width) solid var(--colour-border);
+    box-shadow: var(--shadow-hard);
+    padding: 0.15em 0.4em;
+}
+
 a {
-    color: #75e6da;
-    text-decoration:none;
+    color: var(--colour-primary-ink);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 0.16em;
+    text-underline-offset: 0.18em;
 }
 
 /* website layout */
@@ -120,10 +137,14 @@ a {
 
 
 .DecorativeElement {
-    height: 5px;
+    height: 8px;
     max-width: 100%;
     border-spacing: 5px;
-    background-color: #75e6da;
+    background-color: var(--colour-primary);
+    /* Thinner outline than the tiles: at 5px tall a 3px border swallowed the
+     * pink fill entirely and the bar read as solid black. */
+    border: 2px solid var(--colour-border);
+    box-sizing: content-box;
 }
 
 .aboutImage {
@@ -138,9 +159,12 @@ a {
 }
 .profilePic {
     max-width: 400px;
+    border: var(--border-width) solid var(--colour-border);
+    box-shadow: var(--shadow-hard);
 }
 .imageText {
     width: 500px;
+    color: var(--colour-muted);
     /* padding-left: 5px; */
     /* padding-right: 5px; */
 }
@@ -177,6 +201,12 @@ a {
     /* width: 400px; */
 }
 
+h2 {
+    color: var(--colour-ink);
+    border-bottom: var(--border-width) solid var(--colour-secondary);
+    display: inline-block;
+}
+
 /* projectlinks */
 
 .ProjectsSection {
@@ -206,7 +236,7 @@ a {
 .projectDecorativeElement {
     height: 5px;
     border-spacing: 5px;
-    background-color: #75e6da;
+    background-color: var(--colour-secondary);
     max-width: 80%;
 }
 .aProject {
@@ -227,14 +257,26 @@ a {
 }
 .projectLink {
     flex: 1;
-    border: solid rgb(100, 134, 103) 2px;
+    border: var(--border-width) solid var(--colour-border);
+    box-shadow: var(--shadow-hard);
+    background-color: var(--colour-surface);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #75e6da;
+    color: var(--colour-ink);
     max-width: 80%;
     gap: 2px;
+    transition: transform 0.08s steps(2), box-shadow 0.08s steps(2);
+}
+/* Neobrutalist press: the tile slides onto its own shadow. */
+.projectLink:hover,
+.projectLink:focus-visible {
+    background-color: var(--colour-secondary);
+    color: var(--colour-on-secondary);
+    text-decoration: none;
+    transform: translate(var(--shadow-offset-small), var(--shadow-offset-small));
+    box-shadow: var(--shadow-hard-small);
 }
 /* this is for the shields/badges */
 .projectLinkImg {
@@ -247,12 +289,23 @@ a {
     text-align: center;
 }
 
+.projectLink code {
+    background-color: var(--colour-surface-alt);
+    /* surface-alt is pastel yellow in light but near-black in dark, so it
+     * pairs with --colour-ink, never with --colour-on-secondary. */
+    color: var(--colour-ink);
+    border: 1px solid var(--colour-border);
+    padding: 0.05em 0.25em;
+}
+
 /* footer */
 .pageFooter {
     display: flex;
     max-width: 100%;
+    border-top: var(--border-width) solid var(--colour-border);
 }
 .paraFooter {
     flex: 1;
     text-align: center;
+    color: var(--colour-muted);
 }
