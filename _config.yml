@@ -1,7 +1,17 @@
-title: Adamdoescode Landing Page
+title: Adamdoescode Writings
 description: A small website for my various coding and internet projects
 url: "https://adamdoescode.github.io"
 repository: adamdoescode/adamdoescode.github.io
+lang: en-AU
+timezone: Australia/Perth
+author:
+  name: Adam Graham
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
 
 exclude:
   - .actrc

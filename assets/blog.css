@@ -1,0 +1,150 @@
+:root {
+  color-scheme: dark;
+  --background: #05445e;
+  --surface: #073b4c;
+  --text: #d4f1f4;
+  --accent: #75e6da;
+  --border: #648667;
+  --muted: #a9d6dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-thickness: 0.16em;
+}
+
+.site-header,
+main,
+.site-footer {
+  width: min(100% - 2rem, 48rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 5px solid var(--accent);
+  padding-block: 1.25rem;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 7vw, 3.5rem);
+  margin-block: 0 1rem;
+}
+
+h2 {
+  margin-block-start: 2.5rem;
+}
+
+time {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+.post-list li {
+  border-top: 2px solid var(--border);
+  padding-block: 1.5rem;
+}
+
+.post-list h2 {
+  margin: 0 0 0.25rem;
+}
+
+.post-content {
+  margin-block-start: 2.5rem;
+}
+
+.post-content img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.post-content pre {
+  background: var(--surface);
+  border-left: 5px solid var(--accent);
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.post-content code {
+  background: var(--surface);
+  padding: 0.1em 0.3em;
+}
+
+.post-content pre code {
+  padding: 0;
+}
+
+.post-navigation,
+.site-footer {
+  border-top: 2px solid var(--border);
+  padding-block: 1.5rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 32rem) {
+  .site-header nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
