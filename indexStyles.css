@@ -203,7 +203,9 @@ a:focus-visible {
 
 h2 {
     color: var(--colour-ink);
-    border-bottom: var(--border-width) solid var(--colour-secondary);
+    /* Pink, not yellow: pastel yellow on the off-white background was too
+     * faint to read as a deliberate rule. */
+    border-bottom: var(--border-width) solid var(--colour-primary);
     display: inline-block;
 }
 
@@ -236,7 +238,7 @@ h2 {
 .projectDecorativeElement {
     height: 5px;
     border-spacing: 5px;
-    background-color: var(--colour-secondary);
+    background-color: var(--colour-accent);
     max-width: 80%;
 }
 .aProject {
