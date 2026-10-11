@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Foundation by Isaac Asimov (Book Review)"
-date: 2026-09-21 00:00:00 +0800
+date: 2026-10-11 00:00:00 +0800
 ---
 
-I finished reading *Foundation* by Isaac Asimov this morning. Broadly, I felt it was merely okay. Maybe I would have enjoyed it more if it hadn't been hyped by both the kindle ebook cover (now an apple tv adaption!) and by various comments about the book I have seen over the years.
+Recently read *Foundation* by Isaac Asimov after putting this off for years. It always felt like a *must read* as a science fiction fan. Doubly so as I very much enjoyed *I Robot* when I read it as a young adult. Broadly, I felt *Foundation* was merely okay. Maybe I would have enjoyed it more if it hadn't been hyped by both the kindle ebook cover (now an apple tv adaption!) and by various comments about the book I have seen over the years.
 
 The book has a similar style to the Asimov in *I Robot*, a detective plot with a wiley protagonist striving confidently along a unitary golden path. Most of the major events happen as character exposition with the narratives coloured by their own biases, which I felt Asimov handled well. That this book is compiled from short stories is pretty evident even to a reader coming in blind like I was.
 
@@ -13,3 +13,8 @@ I like the idea of psychohistory that underpins the plot but found it to be the 
 I suspect I would have liked this book more 10 or 20 years ago, when it would have felt more novel to me. But I read it wondering if I should just read something else instead. In that case I should really get back to Simmon's Hyperion which I only stopped reading because it had too strong an emotional impact on me!
 
 On the apple TV adaption; I have vague memories of watching this with my housemate during COVID. While the visuals were beautiful, the plot fairly quickly veers off from the book material. Maybe this is why we gave up on watching it after about 5 episodes.
+
+[I only have two book highlights from Foundation](https://adamdoescode.github.io/AdamsQuotes/?tag=isaacasimov). Which I suspect says more about my experience reading the book than about Asimov who is evidently a good writer. One of my highlights is this fantastic line:
+> ‘Oh-h?’ The tech-man’s voice lingered thoughtfully over the monosyllable.
+
+What a great way to impress the sense of surprise on the reader! If that's all I got from my read of *Foundation* than I think it was worth it.
