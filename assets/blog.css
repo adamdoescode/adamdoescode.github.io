@@ -1,0 +1,182 @@
+/* Blog styles.
+ * Colours come exclusively from assets/theme.css — do not hardcode hex here. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--colour-bg);
+  color: var(--colour-ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--colour-primary-ink);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-thickness: 0.16em;
+}
+
+.site-header,
+main,
+.site-footer {
+  width: min(100% - 2rem, 48rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: var(--border-width) solid var(--colour-border);
+  padding-block: 1.25rem;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  color: var(--colour-ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--colour-ink);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 7vw, 3.5rem);
+  margin-block: 0 1rem;
+}
+
+/* Pink underline instead of pink type: keeps headings at full contrast
+ * while still reading as the primary colour. */
+h1 {
+  border-bottom: var(--shadow-offset) solid var(--colour-primary);
+  padding-block-end: 0.3rem;
+}
+
+h2 {
+  margin-block-start: 2.5rem;
+}
+
+time {
+  color: var(--colour-muted);
+  font-size: 0.9rem;
+}
+
+.post-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+.post-list li {
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
+  background: var(--colour-surface);
+  margin-block-end: 1.5rem;
+  padding: 1.25rem;
+}
+
+.post-list h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+}
+
+.post-list h2 a {
+  color: var(--colour-ink);
+  text-decoration: none;
+}
+
+.post-list h2 a:hover,
+.post-list h2 a:focus-visible {
+  color: var(--colour-primary-ink);
+  text-decoration: underline;
+}
+
+.post-content {
+  margin-block-start: 2.5rem;
+}
+
+.post-content img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
+}
+
+.post-content blockquote {
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard-small);
+  margin-inline: 0;
+  padding: 0.75rem 1rem;
+}
+
+.post-content pre {
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: var(--border-width) solid var(--colour-border);
+  box-shadow: var(--shadow-hard);
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.post-content code {
+  background: var(--colour-surface-alt);
+  color: var(--colour-ink);
+  border: 1px solid var(--colour-border);
+  padding: 0.1em 0.3em;
+}
+
+.post-content pre code {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.post-navigation,
+.site-footer {
+  border-top: var(--border-width) solid var(--colour-border);
+  padding-block: 1.5rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 32rem) {
+  .site-header nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

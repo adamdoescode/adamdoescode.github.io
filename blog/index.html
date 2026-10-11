@@ -1,0 +1,31 @@
+---
+layout: default
+title: Blog
+description: Writing from Adam Graham.
+permalink: /blog/
+---
+<section class="blog-index">
+  <header class="page-intro">
+    <h1>Adamdoescode</h1>
+  </header>
+
+  {% if site.posts.size > 0 %}
+    <ol class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <article>
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%e %B %Y" }}
+            </time>
+            {% if post.description %}
+              <p>{{ post.description }}</p>
+            {% endif %}
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p>No posts published yet.</p>
+  {% endif %}
+</section>

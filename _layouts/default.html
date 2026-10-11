@@ -1,0 +1,34 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/theme.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/blog.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary navigation">
+      <a class="site-title" href="{{ '/blog/' | relative_url }}">{{ site.title }}</a>
+      <div class="nav-links">
+        <a href="https://adamdoescode.github.io/">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+  </footer>
+</body>
+</html>
