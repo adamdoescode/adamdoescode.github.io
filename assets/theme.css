@@ -22,6 +22,10 @@
  *
  * Every pair below was checked against WCAG 2.1: all exceed AA (4.5:1 body
  * text, 3:1 large text and UI edges). Worst case is 4.5:1.
+ *
+ * Token names are a public contract: adamdoescode.github.io/AdamsQuotes/ loads
+ * this file live (with a vendored fallback copy). Renaming or removing a token
+ * needs a matching change in the AdamsQuotes repo.
  */
 
 :root {
